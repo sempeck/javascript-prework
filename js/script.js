@@ -25,3 +25,19 @@ if(playerInput == '1'){
 };
 
 console.log('Gracz wpisał: ' + playerMove);
+
+if(computerMove == playerMove) {
+  printMessage('Remis!');
+} else if (computerMove == 'kamień' && playerMove == 'papier') {
+  printMessage('Ty wygrywasz!');
+} else if (computerMove == 'kamień' && playerMove == 'nożyce'){
+  printMessage('Komputer wygrywa!');
+} else if (computerMove == 'papier' && playerMove == 'kamień') {
+  printMessage('Komputer wygrywa!');
+} else if (computerMove == 'papier' && playerMove == 'nożyce'){
+  printMessage('Ty wygrywasz!');
+} else if (computerMove == 'nożyce' && playerMove == 'papier') {
+  printMessage('Komputer wygrywa!');
+} else if (computerMove == 'nożyce' && playerMove == 'kamień'){
+  printMessage('Ty wygrywasz!');
+} 
